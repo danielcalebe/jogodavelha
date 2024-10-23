@@ -1,0 +1,114 @@
+:root {
+    --primary-color: #6c5ce7;
+    --dark-bg: #1a1a1a;
+    --dark-cell: #2d2d2d;
+    --light-bg: #ffffff;
+    --light-cell: #f0f0f0;
+  }
+  
+  body {
+    min-height: 100vh;
+    transition: all 0.3s ease;
+    font-family: "Agdasima", sans-serif;
+  }
+  
+  body.dark-theme {
+    background-color: var(--dark-bg);
+    color: white;
+  }
+  
+  body.light-theme {
+    background-color: var(--light-bg);
+    color: black;
+  }
+  
+  .game-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    background: linear-gradient(45deg, var(--primary-color), #a29bfe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .game-board {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .agdasima-regular {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .agdasima-bold {
+    font-family: "Agdasima", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  
+  .cell {
+    width: 100%;
+    aspect-ratio: 1;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    margin: 5px;
+  }
+  
+  .dark-theme .cell {
+    background-color: var(--dark-cell);
+    color: white;
+  }
+  
+  .light-theme .cell {
+    background-color: var(--light-cell);
+    color: black;
+  }
+  
+  .cell:hover {
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .dark-theme .theme-toggle {
+    background-color: var(--light-bg);
+    color: black;
+  }
+  
+  .light-theme .theme-toggle {
+    background-color: var(--dark-bg);
+    color: white;
+  }
+  
+  .reset-button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .reset-button:hover {
+    transform: scale(1.05);
+    background: #8075e5;
+  }
