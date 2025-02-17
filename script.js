@@ -62,7 +62,7 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
         }, [100])
 
         player = player === "X" ? "O" : "X";
-        playerFront = player === "X" ?  "Player 1" : "Player 2"
+        playerFront = player == "X" ?  "Player 1" : "Player 2"
 
         currentPlayer.innerHTML = `VEZ DE: ${playerFront}`;
 
