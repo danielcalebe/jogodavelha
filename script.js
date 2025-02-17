@@ -33,7 +33,7 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
     function init(){
         selected = [];
 
-        currentPlayer.innerHTML = `VEZ DE: Player 1`;
+        currentPlayer.innerHTML = `VEZ DE: ${player}`;
 
         document.querySelectorAll(".game button").forEach((item) => {
             item.innerHTML = '';
@@ -62,9 +62,9 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
         }, [100])
 
         player = player === "X" ? "O" : "X";
-        playerFront = player = "X" ?  "Player 1" : "Player 2";
+        playerFront = player = "X" ?  "Player 1" : "Player 2"
 
-        currentPlayer.innerHTML = `VEZ DE: ${playerFront}`;
+        currentPlayer.innerHTML = `VEZ DE: ${player}`;
 
     }
 
