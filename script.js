@@ -33,7 +33,7 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
     function init(){
         selected = [];
 
-        currentPlayer.innerHTML = `VEZ DE: ${player}`;
+        currentPlayer.innerHTML = `VEZ DE: Player 1`;
 
         document.querySelectorAll(".game button").forEach((item) => {
             item.innerHTML = '';
