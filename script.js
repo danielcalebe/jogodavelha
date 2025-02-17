@@ -69,7 +69,7 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
 
     function check(){
 
-      let Lastplayer = player === "X" ? "O" : "X";
+      let Lastplayer = player === "X" ? "Player 2" : "Player 1";
 
         const items = selected
         .map((item, i) => [item, i])
