@@ -32,9 +32,8 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
 
     function init(){
         selected = [];
-        playerFront = player == "X" ?  "Player 1" : "Player 2"
 
-        currentPlayer.innerHTML = `VEZ DE: ${playerFront}`;
+        currentPlayer.innerHTML = `VEZ DE: ${player == 'X' ? 'Player 1' : 'Player 2'}`;
 
         document.querySelectorAll(".game button").forEach((item) => {
             item.innerHTML = '';
@@ -64,7 +63,7 @@ document.querySelector('.theme-toggle').addEventListener('click', () => {
 
         player = player === "X" ? "O" : "X";
 
-        currentPlayer.innerHTML = `VEZ DE: ${playerFront}`;
+        currentPlayer.innerHTML = `VEZ DE: ${player == 'X' ? 'Player 1' : 'Player 2'}`;
 
     }
 
